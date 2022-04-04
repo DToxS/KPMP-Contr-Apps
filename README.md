@@ -82,13 +82,13 @@ Besides the ZIP file downloaded from Zenodo repository, one also needs to downlo
 - Copy this file into subdirectory `KPMP-Datasets\jens\KPMP_reference_atlas_code\jensenLab_compartments`
 - Rename downloaded file `human_compartment_integrated_full.tsv` to `human_compartment_integrated_full_2020February21.tsv`
 
-**Single nucleus dataset by Wu et al. PMID:29980650 **
+**Single nucleus dataset by Wu et al. PMID:29980650**
 
 - Download `GSE114156_Human.kidney.dge.txt.gz` from NCBI GEO website - GSE114156 (the last time we downloaded this file was March 17, 2022)
 - Copy file into subdirectory `KPMP-Datasets\jens\KPMP_reference_atlas_code\Experimental_data\SingleCell_datasets`
 - Rename file to `Wu_MTS.kidney_PMID29980650.dge.txt`
 
-**Single nucleus dataset by Muto et al. 2021 Apr 13;12(1):2190. doi: 10.1038/s41467-021-22368-w. PMID:33850129 **
+**Single nucleus dataset by Muto et al. 2021 Apr 13;12(1):2190. doi: 10.1038/s41467-021-22368-w. PMID:33850129**
 
 - Link to website: [https://cellxgene.cziscience.com/collections/9b02383a-9358-4f0f-9795-a891ec523bcc](https://cellxgene.cziscience.com/collections/9b02383a-9358-4f0f-9795-a891ec523bcc)
 - Download the dataset `Single cell transcriptional and chromatin accessibility profiling redefine cellular heterogeneity in the adult human kidney - RNAseq` in `.rds` format (our last download of this file was on March 17, 2022)
