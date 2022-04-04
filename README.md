@@ -39,9 +39,14 @@ docker pull iyengarlab/kpmp-rp-apps
 
 Before start using the Docker containers, one needs to prepare required data for both containers by downloading the required KPMP dataset file `KPMP-Datasets.zip` from the *Zenodo* repository ([https://doi.org/10.5281/zenodo.6410326](https://doi.org/10.5281/zenodo.6410326)) and extracting it to a drive, e.g. `D`. After the ZIP file is extracted, a folder tree will be created with the following structure:
 
-```
+```powershell
 D:\KPMP-Datasets
 ├── jens
+│   └── KPMP_reference_atlas_code
+│       ├── Experimental_data
+│       ├── GeneOntology_datasets
+│       ├── MBCO_datasets
+│       └── jensenLab_compartments
 ├── rachel
 └── raji
 ```
