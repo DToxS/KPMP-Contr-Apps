@@ -137,6 +137,8 @@ Then, the C# program can be launched using the following command:
 KPMP_reference_kidney_tissue_atlas.exe
 ```
 
+Note: please refer to [README for Running Jens KPMP Codes.txt](README for Running Jens KPMP Codes.txt) for the usage details of this program.
+
 When the program is finished, one can use the following command to quit the container and the container will be stopped automatically:
 
 ```powershell
@@ -185,6 +187,8 @@ Rscript "r-file.R"
 ```bash
 python3 "python-file.py"
 ```
+
+Note: please refer to the README file of the selected set of programs for their usage details.
 
 When the program is finished, one can use the following commands to quit the container and the container will be stopped automatically:
 
