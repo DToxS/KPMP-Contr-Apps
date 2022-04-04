@@ -6,7 +6,7 @@ This README file includes the instructions of how to use the Docker containers b
 
 The computers to run KPMP Docker containers must meet the following requirements:
 
-- A modern CPU supporting hardware virtualization technology, such as  Intel VT and AMD-V
+- A modern CPU with a minimum of 2 cores and hardware virtualization technology, such as  Intel VT and AMD-V
 - A minimum of 32GB memory for running Windows container and 128GB for running Linux container
 - A minimum of 50GB hard drive space
 - Microsoft Windows 10 operating system
@@ -110,7 +110,7 @@ Now, one can launch two KPMP Docker containers and connect them to the downloade
 When Docker Desktop is set to the Windows container mode, open a *Command Prompt* command-line application and issue the following command to launch the Windows container for C# program:
 
 ```powershell
-docker run -it --name kpmp-cs-apps --cpus 8 --memory 24g --mount type=bind,source=D:\KPMP-Datasets\jens\KPMP_reference_atlas_code,target=C:\Data iyengarlab/kpmp-cs-apps cmd
+docker run -it --name kpmp-cs-apps --cpus 2 --memory 24g --mount type=bind,source=D:\KPMP-Datasets\jens\KPMP_reference_atlas_code,target=C:\Data iyengarlab/kpmp-cs-apps cmd.exe
 ```
 
 ### Linux Container for R and Python programs
@@ -118,7 +118,7 @@ docker run -it --name kpmp-cs-apps --cpus 8 --memory 24g --mount type=bind,sourc
 When Docker Desktop is set to the Linux container mode, open a *Ubuntu on Windows* command-line application and issue the following command to launch the Linux container for R and Python programs:
 
 ```bash
-docker run -it --name kpmp-rp-apps --cpus 8 --memory 64g --mount type=bind,source=/mnt/d/KPMP-Datasets,target=/data iyengarlab/kpmp-rp-apps bash -l
+docker run -it --name kpmp-rp-apps --cpus 2 --memory 100g --mount type=bind,source=/mnt/d/KPMP-Datasets,target=/data iyengarlab/kpmp-rp-apps bash -l
 ```
 
 ## Using Data Analysis Programs
@@ -148,7 +148,7 @@ exit
 Once inside the *kpmp-rp-apps* container, first one needs to issue the following command to grant accessibility to the mounted `/data` folder:
 
 ```bash
-find /data -type d -print0 | xargs -0 chmod 755
+find /data -maxdepth 1 -type d -print0 | xargs -0 chmod 755
 ```
 
 Then, one can switch to any of three sets of R and Python programs, by setting `USER_NAME` in the following command to one of `jens`, `rachel` or `raji`:
@@ -192,3 +192,4 @@ When the program is finished, one can use the following commands to quit the con
 exit
 exit
 ```
+
