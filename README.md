@@ -137,7 +137,7 @@ Then, the C# program can be launched using the following command:
 KPMP_reference_kidney_tissue_atlas.exe
 ```
 
-Note: please refer to [README for Running Jens KPMP Codes.txt](README for Running Jens KPMP Codes.txt) for the usage details of this program.
+Note: please refer to [README for Running Jens KPMP Codes.txt](README%20for%20Running%20Jens%20KPMP%20Codes.txt) for the usage details of this program.
 
 When the program is finished, one can use the following command to quit the container and the container will be stopped automatically:
 
